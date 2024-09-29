@@ -8,26 +8,30 @@
 </head>
 <body>
     <h1>Behavioural Studies Review</h1>
-
-    <!-- Spinning Wheel -->
-    <div id="wheel">
-        <div id="spinner"></div>
+    
+    <!-- Spinning Wheel Section -->
+    <div class="interactive-area">
+        <div id="wheel">
+            <div id="spinner"></div>
+        </div>
+        <button onclick="spinWheel()">Spin the Wheel!</button>
+        <div id="question"></div>
+        <button id="revealBtn">Show Answer</button>
+        <div id="answer"></div>
     </div>
-    <button onclick="spinWheel()">Spin the Wheel!</button>
-    <div id="question"></div>
-    <button id="revealBtn">Show Answer</button>
-    <div id="answer"></div>
 
     <!-- Flashcards Section -->
-    <div id="flashcards-container"></div>
+    <div class="interactive-area">
+        <h2>Flashcards</h2>
+        <div id="flashcards-container"></div>
+    </div>
 
-    <!-- Matching Game -->
-    <div id="matching-game">
-        <div id="terms" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <!-- Drag elements will be added dynamically -->
-        </div>
-        <div id="definitions" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <!-- Drop elements will be added dynamically -->
+    <!-- Matching Game Section -->
+    <div class="interactive-area">
+        <h2>Matching Game</h2>
+        <div id="matching-game">
+            <div id="terms" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="definitions" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
     </div>
 
